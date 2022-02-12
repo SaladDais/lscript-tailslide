@@ -188,6 +188,7 @@ elseif(DARWIN)
         libaprutil-1.0.dylib
         libaprutil-1.dylib
         ${EXPAT_COPY}
+        libexception_handler.dylib
         libGLOD.dylib
         libndofdev.dylib
         libnghttp2.dylib
@@ -229,9 +230,7 @@ elseif(LINUX)
       set(release_files
         #libapr-1.so.0
         #libaprutil-1.so.0
-        libatk-1.0.so
         #libdb-5.1.so
-        ${EXPAT_COPY}
         #libfreetype.so.6.6.2
         #libfreetype.so.6
         #libGLOD.so
