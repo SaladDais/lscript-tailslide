@@ -47,7 +47,10 @@ $/LicenseInfo$
 import os
 import sys
 import errno
-import HTMLParser
+try:
+    import HTMLParser
+except ImportError:
+    import html.parser as HTMLParser
 import re
 import signal
 import subprocess
@@ -114,7 +117,7 @@ def main(command, arguments=[], libpath=[], vars={}):
         for key, value in vars.items():
             # As noted a few lines above, facilitate copy-paste rerunning.
             log.info("%s='%s' \\" % (key, value))
-    os.environ.update(dict([(str(key), str(value)) for key, value in vars.iteritems()]))
+    os.environ.update(dict([(str(key), str(value)) for key, value in vars.items()]))
     # Run the child process.
     command_list = [command]
     command_list.extend(arguments)
