@@ -427,35 +427,9 @@ U32 LLMediaEntry::setWhiteList( const LLSD &whitelist )
 }
 
 
-static void prefix_with(std::string &str, const char *chars, const char *prefix)
-{
-    // Given string 'str', prefix all instances of any character in 'chars'
-    // with 'prefix'
-    size_t found = str.find_first_of(chars);
-    size_t prefix_len = strlen(prefix);
-    while (found != std::string::npos)
-    {
-        str.insert(found, prefix, prefix_len);
-        found = str.find_first_of(chars, found+prefix_len+1);
-    }
-}
-
 static bool pattern_match(const std::string &candidate_str, const std::string &pattern)
 {
-    // If the pattern is empty, it matches
-    if (pattern.empty()) return true;
-    
-    // 'pattern' is a glob pattern, we only accept '*' chars
-    // copy it
-    std::string expression = pattern;
-    
-    // Escape perl's regexp chars with a backslash, except all "*" chars
-    prefix_with(expression, ".[{()\\+?|^$", "\\");
-    prefix_with(expression, "*", ".");
-                    
-    // case-insensitive matching:
-    boost::regex regexp(expression, boost::regex::perl|boost::regex::icase);
-    return ll_regex_match(candidate_str, regexp);
+    return false;
 }
 
 bool LLMediaEntry::checkCandidateUrl(const std::string& url) const

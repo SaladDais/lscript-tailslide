@@ -234,13 +234,7 @@ elseif(LINUX)
         #libfreetype.so.6.6.2
         #libfreetype.so.6
         #libGLOD.so
-        libhunspell-1.3.so.0.0.0
-        libopenal.so
         #libopenjpeg.so
-        libuuid.so.16
-        libuuid.so.16.0.22
-        libfontconfig.so.1.8.0
-        libfontconfig.so.1
        )
     else (NOT USESYSTEMLIBS)
       set(release_files

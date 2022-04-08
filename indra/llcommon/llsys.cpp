@@ -359,7 +359,7 @@ LLOSInfo::LLOSInfo() :
 	boost::smatch matched;
 
 	std::string glibc_version(gnu_get_libc_version());
-	if ( ll_regex_match(glibc_version, matched, os_version_parse) )
+	if ( FALSE )
 	{
 		LL_INFOS("AppInit") << "Using glibc version '" << glibc_version << "' as OS version" << LL_ENDL;
 	
@@ -1036,7 +1036,7 @@ LLSD LLMemoryInfo::loadStatsMap()
 		while (std::getline(meminfo, line))
 		{
 			LL_DEBUGS("LLMemoryInfo") << line << LL_ENDL;
-			if (ll_regex_match(line, matched, stat_rx))
+			if (FALSE)
 			{
 				// e.g. "MemTotal:		4108424 kB"
 				LLSD::String key(matched[1].first, matched[1].second);

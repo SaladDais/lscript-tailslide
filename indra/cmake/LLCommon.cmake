@@ -31,7 +31,8 @@ if (LINUX)
         ${BOOST_FIBER_LIBRARY} 
         ${BOOST_CONTEXT_LIBRARY} 
         ${BOOST_THREAD_LIBRARY} 
-        ${BOOST_SYSTEM_LIBRARY} 
+        ${BOOST_SYSTEM_LIBRARY}
+        ${BOOST_REGEX_LIBRARY}
         rt
         )
 else (LINUX)

@@ -48,6 +48,7 @@ endif (WINDOWS)
 
 target_link_libraries(lscript_harness
     ${LSCRIPT_LIBRARIES}
+    ${BOOST_REGEX_LIBRARY}
     ${LLCOMMON_LIBRARIES}
     ${LLMATH_LIBRARIES}
     ${PTHREAD_LIBRARY}
