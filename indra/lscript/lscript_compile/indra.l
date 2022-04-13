@@ -22,7 +22,6 @@ FS			(f|F)
 #include "lscript_tree.h"
 #include "lscript_typecheck.h"
 #include "lscript_resource.h"
-#include "indra.y.hpp"
 #include "lltimer.h"
 #include "indra_constants.h"
 #include "lllslconstants.h"
@@ -37,6 +36,8 @@ FS			(f|F)
 #include "lscript_http.h"
 #include "llclickaction.h"
 #include "llmediaentry.h"
+
+#include "indra.y.hpp"
 
 void count();
 void line_comment();

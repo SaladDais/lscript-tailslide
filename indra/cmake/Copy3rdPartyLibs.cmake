@@ -188,9 +188,9 @@ elseif(DARWIN)
         libaprutil-1.0.dylib
         libaprutil-1.dylib
         ${EXPAT_COPY}
-        libexception_handler.dylib
-        libGLOD.dylib
-        libndofdev.dylib
+        #libexception_handler.dylib
+        #libGLOD.dylib
+        #libndofdev.dylib
         libnghttp2.dylib
         libnghttp2.14.dylib
         libnghttp2.14.19.0.dylib

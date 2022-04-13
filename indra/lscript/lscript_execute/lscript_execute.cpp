@@ -331,7 +331,6 @@ void LLScriptExecuteLSL2::resumeEventHandler(BOOL b_print, const LLUUID &id, F32
 {
 	//	call opcode run function pointer with buffer and IP
 	S32 cur_ip = get_register(mBuffer, LREG_IP);
-	S32 start_ip = cur_ip;
 
 	// try to stay in a hot interpretation loop as much as we can
 	while (cur_ip != 0) {
