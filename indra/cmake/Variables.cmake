@@ -83,7 +83,7 @@ else (ADDRESS_SIZE EQUAL 32)
   # report a 64-bit processor.
   execute_process(COMMAND
                   "${PYTHON_EXECUTABLE}" "-c"
-                  "import platform; print platform.machine()"
+                  "import platform; print (platform.machine())"
                   OUTPUT_VARIABLE ARCH OUTPUT_STRIP_TRAILING_WHITESPACE)
   # We expect values of the form i386, i686, x86_64, AMD64.
   # In CMake, expressing ARCH.endswith('64') is awkward:
