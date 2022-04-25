@@ -1192,9 +1192,9 @@ remote_data
 		LLScriptIdentifier	*id4 = new LLScriptIdentifier(gLine, gColumn, $13);	
 		gAllocationManager->addAllocation(id4);
 		LLScriptIdentifier	*id5 = new LLScriptIdentifier(gLine, gColumn, $16);	
-		gAllocationManager->addAllocation(id4);
+		gAllocationManager->addAllocation(id5);
 		LLScriptIdentifier	*id6 = new LLScriptIdentifier(gLine, gColumn, $19);	
-		gAllocationManager->addAllocation(id4);
+		gAllocationManager->addAllocation(id6);
 		$$ = new LLScriptRemoteEvent(gLine, gColumn, id1, id2, id3, id4, id5, id6);
 		gAllocationManager->addAllocation($$);
 	}
