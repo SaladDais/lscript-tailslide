@@ -155,3 +155,4 @@ if (DARWIN)
 endif (DARWIN)
 
 add_library (lscript_compile ${lscript_compile_SOURCE_FILES})
+target_link_libraries(lscript_compile tailslide)

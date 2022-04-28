@@ -1,3 +1,5 @@
+%option never-interactive
+%option nounistd
 
 N			[0-9]
 L			[a-zA-Z_]
@@ -7,6 +9,9 @@ FS			(f|F)
 %e 10000
 %n 4000
 %p 5000
+ /* exclusive state to eat comments of any length without overflowing any buffers */
+%x COMMENT
+%x C_COMMENT
 
 %top {
 	#include "linden_common.h"
@@ -86,8 +91,16 @@ int yyerror(const char *fmt, ...);
 %}
 
 %%
-"//"					{ gInternalLine++; gInternalColumn = 0; line_comment(); }
-"/*"					{ block_comment(); }
+
+"//"                { BEGIN COMMENT; }
+<COMMENT>.          { /* eat comments */ }
+<COMMENT>\n         { BEGIN 0;  }
+
+"/*"              { BEGIN C_COMMENT; }
+<C_COMMENT>"*/"   { BEGIN 0;  }
+<C_COMMENT>\n     { }
+<C_COMMENT>.      {  }
+
 
 "integer"			{ count(); return(INTEGER); }
 "float"				{ count(); return(FLOAT_TYPE); }
@@ -692,7 +705,15 @@ int yyerror(const char *fmt, ...);
 "STATUS_INTERNAL_ERROR"              { count(); yylval.ival = LSL_STATUS_INTERNAL_ERROR; return(INTEGER_CONSTANT); }
 "STATUS_WHITELIST_FAILED"            { count(); yylval.ival = LSL_STATUS_WHITELIST_FAILED; return(INTEGER_CONSTANT); }
 
-{L}({L}|{N})*		{ count(); yylval.sval = new char[strlen(yytext) + 1]; strcpy(yylval.sval, yytext); return(IDENTIFIER); }
+{L}({L}|{N})*		{
+    count();
+    yylval.sval = new char[strlen(yytext) + 1];
+    strcpy(yylval.sval, yytext);
+    if (strlen(yytext) >= 255) {//
+        yyerror("too long!");
+    }
+    return(IDENTIFIER);
+}
 
 {N}+{E}					{ count(); yylval.fval = (F32)atof(yytext); return(FP_CONSTANT); }
 {N}*"."{N}+({E})?{FS}?	{ count(); yylval.fval = (F32)atof(yytext); return(FP_CONSTANT); }
@@ -856,21 +877,21 @@ BOOL lscript_compile(char *filename, BOOL compile_to_mono, BOOL is_god_like = FA
 	return lscript_compile(src_filename, NULL, err_filename, compile_to_mono, class_name, is_god_like);
 }
 
-
 S32 yywrap()
 {
 #if defined(FLEX_SCANNER) && !defined(LL_WINDOWS)
-	// get gcc to stop complaining about lack of use of yyunput
-	(void) yyunput;
+       // get gcc to stop complaining about lack of use of yyunput
+       (void) yyunput;
 #endif
-	return(1);
+       return(1);
 }
+
 
 void line_comment()
 {
 	char c;
 
-	while ((c = yyinput()) != '\n' && c != 0 && c != EOF)
+	while ((c = yyinput()) != '\n' && c != 0)
 		;
 }
 
@@ -878,7 +899,7 @@ void block_comment()
 {
 	char c1 = 0;
 	char c2 = yyinput();
-	while (c2 != 0 && c2 != EOF && !(c1 == '*' && c2 == '/')) {
+	while (c2 != 0 && !(c1 == '*' && c2 == '/')) {
 		if (c2 == '\n')
 		{
 			gInternalLine++;

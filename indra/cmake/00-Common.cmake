@@ -55,6 +55,12 @@ set(CMAKE_CONFIGURATION_TYPES "RelWithDebInfo;Release;Debug" CACHE STRING
 
 
 # Platform-specific compilation flags.
+if (MSVC)
+  # MSVC requires C++20 be enabled to allow designated initializers
+  set(CMAKE_CXX_STANDARD 20)
+else()
+  set(CMAKE_CXX_STANDARD 17)
+endif()
 
 if (WINDOWS)
   # Don't build DLLs.
@@ -213,6 +219,8 @@ if (LINUX)
   if (NOT USESYSTEMLIBS)
     # this stops us requiring a really recent glibc at runtime
     add_compile_options(-fno-stack-protector)
+    add_compile_options(-fsanitize=fuzzer)
+    add_link_options(-fsanitize=fuzzer-no-link)
     # linking can be very memory-hungry, especially the final viewer link
     #set(CMAKE_CXX_LINK_FLAGS "-Wl,--no-keep-memory")
 	set(CMAKE_CXX_LINK_FLAGS "-Wl,--no-keep-memory -Wl,--build-id -Wl,-rpath,'$ORIGIN:$ORIGIN/../lib' -Wl,--exclude-libs,ALL")

@@ -38,7 +38,7 @@
 #include "llpointer.h"
 #include "llunits.h"
 
-#define LL_TRACE_ENABLED 1
+#define LL_TRACE_ENABLED 0
 
 namespace LLTrace
 {
@@ -410,7 +410,7 @@ public:
 #if LL_TRACE_ENABLED
 		claim_alloc(sMemStat, size);
 #endif
-		return ll_aligned_malloc<ALIGNMENT>(size);
+		return malloc(size);
 	}
 
 	template<int CUSTOM_ALIGNMENT>
@@ -419,7 +419,7 @@ public:
 #if LL_TRACE_ENABLED
 		claim_alloc(sMemStat, size);
 #endif
-		return ll_aligned_malloc<CUSTOM_ALIGNMENT>(size);
+		return malloc(size);
 	}
 
 	void operator delete(void* ptr, size_t size)
@@ -427,7 +427,7 @@ public:
 #if LL_TRACE_ENABLED
 		disclaim_alloc(sMemStat, size);
 #endif
-		ll_aligned_free<ALIGNMENT>(ptr);
+		free(ptr);
 	}
 
 	template<int CUSTOM_ALIGNMENT>
@@ -436,7 +436,7 @@ public:
 #if LL_TRACE_ENABLED
 		disclaim_alloc(sMemStat, size);
 #endif
-		ll_aligned_free<CUSTOM_ALIGNMENT>(ptr);
+		free(ptr);
 	}
 
 	void* operator new [](size_t size)
@@ -444,7 +444,7 @@ public:
 #if LL_TRACE_ENABLED
 		claim_alloc(sMemStat, size);
 #endif
-		return ll_aligned_malloc<ALIGNMENT>(size);
+		return malloc(size);
 	}
 
 	void operator delete[](void* ptr, size_t size)
@@ -452,7 +452,7 @@ public:
 #if LL_TRACE_ENABLED
 		disclaim_alloc(sMemStat, size);
 #endif
-		ll_aligned_free<ALIGNMENT>(ptr);
+		free(ptr);
 	}
 
 	// claim memory associated with other objects/data as our own, adding to our calculated footprint

@@ -292,7 +292,7 @@ void BlockTimer::updateTimes()
 	}
 }
 
-static LLTrace::BlockTimerStatHandle FTM_PROCESS_TIMES("Process FastTimer Times");
+//static LLTrace::BlockTimerStatHandle FTM_PROCESS_TIMES("Process FastTimer Times");
 
 // not thread safe, so only call on main thread
 //static

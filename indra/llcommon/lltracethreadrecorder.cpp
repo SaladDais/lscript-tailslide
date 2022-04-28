@@ -274,11 +274,11 @@ void ThreadRecorder::pushToParent()
 }
 
 
-static LLTrace::BlockTimerStatHandle FTM_PULL_TRACE_DATA_FROM_CHILDREN("Pull child thread trace data");
+//static LLTrace::BlockTimerStatHandle FTM_PULL_TRACE_DATA_FROM_CHILDREN("Pull child thread trace data");
 
 void ThreadRecorder::pullFromChildren()
 {
-#if LL_TRACE_ENABLED
+#if LL_TRACE_ENABLED && 0
 	LL_RECORD_BLOCK_TIME(FTM_PULL_TRACE_DATA_FROM_CHILDREN);
 	if (mActiveRecordings.empty()) return;
 

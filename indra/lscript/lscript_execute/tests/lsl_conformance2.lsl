@@ -11,7 +11,7 @@ testFailed(string description, string actual, string expected)
 {
     ++gTestsFailed;
     print("FAILED!: " + description + " (" + actual + " expected " + expected + ")");
-    sdAssert(0);
+    0.0/0.0;
 }
 
 ensureTrue(string description, integer actual)

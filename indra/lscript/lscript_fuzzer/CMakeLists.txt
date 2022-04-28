@@ -1,0 +1,58 @@
+# -*- cmake -*-
+
+include(00-Common)
+include(LLCommon)
+include(LLMath)
+include(LScript)
+
+include_directories(
+        ${LLCOMMON_INCLUDE_DIRS}
+        ${LLMATH_INCLUDE_DIRS}
+        ${LSCRIPT_INCLUDE_DIRS}
+)
+include_directories(SYSTEM
+        ${LLCOMMON_SYSTEM_INCLUDE_DIRS}
+        )
+
+set(lscript_fuzzer_SOURCE_FILES
+        lscriptfuzzer.cpp
+        )
+
+set(lscript_execute_HEADER_FILES
+        fuzz_utils.h
+        CMakeLists.txt
+        )
+
+set_source_files_properties(${lscript_fuzzer_HEADER_FILES}
+        PROPERTIES HEADER_FILE_ONLY TRUE)
+
+list(APPEND lscript_fuzzer_SOURCE_FILES ${lscript_fuzzer_HEADER_FILES})
+
+
+add_executable(lscript_fuzzer
+        ${lscript_fuzzer_SOURCE_FILES}
+        )
+set_target_properties(lscript_fuzzer
+        PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY "${EXE_STAGING_DIR}"
+        )
+
+if (WINDOWS)
+    # The following come from LLAddBuildTest.cmake's INTEGRATION_TEST_xxxx target.
+    set_target_properties(lscript_fuzzer
+            PROPERTIES
+            LINK_FLAGS "/debug /NODEFAULTLIB:LIBCMT /SUBSYSTEM:CONSOLE"
+            LINK_FLAGS_DEBUG "/NODEFAULTLIB:\"LIBCMT;LIBCMTD;MSVCRT\" /INCREMENTAL:NO"
+            LINK_FLAGS_RELEASE ""
+            )
+endif (WINDOWS)
+
+target_link_libraries(lscript_fuzzer
+    ${LSCRIPT_LIBRARIES}
+    ${BOOST_REGEX_LIBRARY}
+    ${LLCOMMON_LIBRARIES}
+    ${LLMATH_LIBRARIES}
+    ${PTHREAD_LIBRARY}
+    ${DL_LIBRARY}
+    "-fsanitize=fuzzer"
+    )

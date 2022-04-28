@@ -67,8 +67,6 @@ namespace tut
 		ensure_equals("IP register zeroed", get_register(execute->mBuffer, LREG_IP), 0x0);
 		ensure_equals("SP register", get_register(execute->mBuffer, LREG_SP), 0x3FFF);
 		ensure_equals("BP register", get_register(execute->mBuffer, LREG_BP), 0x3FFB);
-		ensure_equals("HR register", get_register(execute->mBuffer, LREG_HR), 15434);
-		ensure_equals("HP register", get_register(execute->mBuffer, LREG_HP), 16076);
 	}
 
 	template<> template<>
@@ -120,7 +118,5 @@ namespace tut
 		ensure_equals("IP register zeroed", get_register(execute->mBuffer, LREG_IP), 0x0);
 		ensure_equals("SP register", get_register(execute->mBuffer, LREG_SP), 0x3FFF);
 		ensure_equals("BP register", get_register(execute->mBuffer, LREG_BP), 0x3FFB);
-		ensure_equals("HR register", get_register(execute->mBuffer, LREG_HR), 15434);
-		ensure_equals("HP register", get_register(execute->mBuffer, LREG_HP), 16076);
 	}
 }
