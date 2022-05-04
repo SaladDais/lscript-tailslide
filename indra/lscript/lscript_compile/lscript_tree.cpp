@@ -193,10 +193,14 @@ void LLScriptConstantInteger::recurse(LLFILE *fp, S32 tabs, S32 tabsize, LSCRIPT
 		}
 		break;
 	case LSCP_EMIT_CIL_ASSEMBLY:
-	    if (!mValue)
-		    fprintf(fp, "ldc.i4.0\n");
-        else if (mValue == 1)
-            fprintf(fp, "ldc.i4.1\n");
+        // single-byte push form of common constant int vals
+        if (mValue >= 0 && mValue <= 8)
+            fprintf(fp, "ldc.i4.%d\n", mValue);
+        else if (mValue == -1)
+            fprintf(fp, "ldc.i4.m1\n");
+        // can use the single-byte operand version of ldc.i4
+        else if (mValue >= -128 && mValue <= 127)
+            fprintf(fp, "ldc.i4.s %d\n", mValue);
         else
             fprintf(fp, "ldc.i4 %d\n", mValue);
 		type = mType;
