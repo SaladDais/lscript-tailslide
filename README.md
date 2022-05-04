@@ -2,7 +2,8 @@
 
 ## Summary
 
-Integrates Tailslide into lscript instead of using the lscript_tree compiler. Supports both CIL and LSO compilation.
+Integrates [Tailslide](https://github.com/SaladDais/tailslide) into lscript instead of using the lscript_tree
+compiler. Supports both CIL and LSO compilation.
 
 ## Building
 
@@ -67,4 +68,4 @@ INFO: -fork=8: 2754 seed inputs, starting to fuzz in /tmp/libFuzzerTemp.426379.d
 
 ## License
 
-LGPL v2.1
+LGPL v2.1. Tailslide itself is MIT-licensed.
