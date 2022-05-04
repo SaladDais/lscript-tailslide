@@ -1,5 +1,7 @@
 # -*- cmake -*-
 
+include(00-Common)
+
 set(lscript_HEADER_FILES
     llscriptresource.h
     llscriptresourceconsumer.h
@@ -19,7 +21,11 @@ add_subdirectory(lscript_execute)
 
 add_subdirectory(lscript_library)
 add_subdirectory(lscript_harness)
-add_subdirectory(lscript_fuzzer)
+if (CAN_BUILD_FUZZER)
+    add_subdirectory(lscript_fuzzer)
+else ()
+    message("Not building with Clang on Linux, won't attempt building fuzzer.")
+endif()
 
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/viewer_version.txt"
            "1.0\n")

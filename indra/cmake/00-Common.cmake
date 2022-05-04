@@ -161,7 +161,6 @@ if (WINDOWS)
   endif (NOT VS_DISABLE_FATAL_WARNINGS)
 endif (WINDOWS)
 
-
 if (LINUX)
   set(CMAKE_SKIP_RPATH TRUE)
 
@@ -213,8 +212,6 @@ if (LINUX)
   if (NOT USESYSTEMLIBS)
     # this stops us requiring a really recent glibc at runtime
     add_compile_options(-fno-stack-protector)
-    add_compile_options(-fsanitize=fuzzer)
-    add_link_options(-fsanitize=fuzzer-no-link)
     # linking can be very memory-hungry, especially the final viewer link
     #set(CMAKE_CXX_LINK_FLAGS "-Wl,--no-keep-memory")
 	set(CMAKE_CXX_LINK_FLAGS "-Wl,--no-keep-memory -Wl,--build-id -Wl,-rpath,'$ORIGIN:$ORIGIN/../lib' -Wl,--exclude-libs,ALL")
@@ -259,9 +256,9 @@ endif (DARWIN)
 
 
 if (LINUX OR DARWIN)
-  if (CMAKE_CXX_COMPILER MATCHES ".*clang")
+  if (CMAKE_CXX_COMPILER MATCHES ".*clang.*")
     set(CMAKE_COMPILER_IS_CLANGXX 1)
-  endif (CMAKE_CXX_COMPILER MATCHES ".*clang")
+  endif (CMAKE_CXX_COMPILER MATCHES ".*clang.*")
 
   if (CMAKE_COMPILER_IS_GNUCXX)
     set(GCC_WARNINGS "-Wall -Wno-sign-compare -Wno-trigraphs")
@@ -287,6 +284,15 @@ if (LINUX OR DARWIN)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m${ADDRESS_SIZE}")
 endif (LINUX OR DARWIN)
 
+set(CAN_BUILD_FUZZER FALSE)
+if (CMAKE_COMPILER_IS_CLANGXX AND LINUX)
+  set(CAN_BUILD_FUZZER TRUE)
+endif()
+
+if (CAN_BUILD_FUZZER)
+  add_compile_options(-fsanitize=fuzzer)
+  add_link_options(-fsanitize=fuzzer-no-link)
+endif()
 
 if (USESYSTEMLIBS)
   add_definitions(-DLL_USESYSTEMLIBS=1)
