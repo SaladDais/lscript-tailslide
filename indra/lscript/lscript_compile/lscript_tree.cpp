@@ -4358,7 +4358,7 @@ void LLScriptListExpressionList::recurse(LLFILE *fp, S32 tabs, S32 tabsize, LSCR
 		break;
 	default:
 		mFirstp->recurse(fp, tabs, tabsize, pass, ptype, prunearg, scope, type, basetype, count, chunk, heap, stacksize, entry, entrycount, NULL);
-        if (mFirstp->mType != LET_LIST_EXPRESSION_LIST && pass == LSCP_TYPE && mFirstp->mReturnType == LST_NULL || mFirstp->mReturnType == LST_LIST)
+        if (mFirstp->mType != LET_LIST_EXPRESSION_LIST && pass == LSCP_TYPE && (mFirstp->mReturnType == LST_NULL || mFirstp->mReturnType == LST_LIST))
             gErrorToText.writeError(fp, mLineNumber, mColumnNumber, LSERROR_INVALID);
 		if (mSecondp)
 		{
