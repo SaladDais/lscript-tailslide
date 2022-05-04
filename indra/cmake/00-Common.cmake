@@ -54,13 +54,7 @@ set(CMAKE_CONFIGURATION_TYPES "RelWithDebInfo;Release;Debug" CACHE STRING
     "Supported build types." FORCE)
 
 
-# Platform-specific compilation flags.
-if (MSVC)
-  # MSVC requires C++20 be enabled to allow designated initializers
-  set(CMAKE_CXX_STANDARD 20)
-else()
-  set(CMAKE_CXX_STANDARD 17)
-endif()
+set(CMAKE_CXX_STANDARD 14)
 
 if (WINDOWS)
   # Don't build DLLs.
