@@ -151,7 +151,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
     in.close();
 
 	Tailslide::ScopedScriptParser parser(nullptr);
-	auto script = parser.parseLSL(file);
+	auto script = parser.parseLSLFile(file);
 
 	if (script) {
 		script->collectSymbols();

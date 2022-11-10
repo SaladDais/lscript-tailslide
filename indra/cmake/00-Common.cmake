@@ -266,9 +266,9 @@ if (LINUX OR DARWIN)
     set(GCC_WARNINGS "-Wall -Wno-sign-compare -Wno-trigraphs")
   endif()
 
-  if (NOT GCC_DISABLE_FATAL_WARNINGS)
-    set(GCC_WARNINGS "${GCC_WARNINGS} -Werror")
-  endif (NOT GCC_DISABLE_FATAL_WARNINGS)
+#  if (NOT GCC_DISABLE_FATAL_WARNINGS)
+#    set(GCC_WARNINGS "${GCC_WARNINGS} -Werror")
+#  endif (NOT GCC_DISABLE_FATAL_WARNINGS)
 
   if (${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang" AND DARWIN AND XCODE_VERSION GREATER 4.9)
     set(GCC_CXX_WARNINGS "$[GCC_WARNINGS] -Wno-reorder -Wno-unused-const-variable -Wno-format-extra-args -Wno-unused-private-field -Wno-unused-function -Wno-tautological-compare -Wno-empty-body -Wno-unused-variable -Wno-unused-value")

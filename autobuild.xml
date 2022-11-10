@@ -3,334 +3,6 @@
 <map>
     <key>installables</key>
     <map>
-      <key>gstreamer10</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;</string>
-        <key>license</key>
-        <string>LGPL</string>
-        <key>license_file</key>
-        <string>LICENSES/gstreamer.txt</string>
-        <key>name</key>
-        <string>gstreamer10</string>
-        <key>platforms</key>
-        <map>
-          <key>linux</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>01f39ecf80dae64e30402ac384035b3e</string>
-              <key>url</key>
-              <string>http://downloads.phoenixviewer.com/gstreamer10-1.6.3.201605191852-linux-201605191852.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>0.10.6.294903</string>
-      </map>
-      <key>breakpad</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (C) google</string>
-        <key>license</key>
-        <string>BSD</string>
-        <key>license_file</key>
-        <string>LICENSES/google_breakpad.txt</string>
-        <key>name</key>
-        <string>breakpad</string>
-        <key>platforms</key>
-        <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>482c2b25bbfd25edc058a02f82da39b2</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/breakpad-4708e6fb-linux64_bionic-220392253.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>2.48.0</string>
-      </map>
-      <key>glib</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (C) glib project</string>
-        <key>license</key>
-        <string>LGPL</string>
-        <key>license_file</key>
-        <string>LICENSES/glib.txt</string>
-        <key>name</key>
-        <string>glib</string>
-        <key>platforms</key>
-        <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>9c93ba8b8af97fc8379f77de77e1540a</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/glib-2.48.0.202301938-linux64-202301938.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>2.48.0</string>
-      </map>
-      <key>fltk</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (C) fltk project</string>
-        <key>license</key>
-        <string>LGPL/fltk</string>
-        <key>license_file</key>
-        <string>LICENSES/fltk.txt</string>
-        <key>name</key>
-        <string>fltk</string>
-        <key>platforms</key>
-        <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>81fe1e927e4fe3c5e5f15ce6219ca883</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/fltk-1.3.5.202282121-linux64-202282121.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>1.3.5</string>
-      </map>
-      <key>jemalloc</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (C) 2002-present Jason Evans jasone@canonware.com.</string>
-        <key>description</key>
-        <string>jemalloc is a general purpose malloc(3) implementation that emphasizes fragmentation avoidance and scalable concurrency support.</string>
-        <key>license</key>
-        <string>jemalloc (BSD derived)</string>
-        <key>license_file</key>
-        <string>LICENSES/jemalloc.txt</string>
-        <key>name</key>
-        <string>jemalloc</string>
-        <key>platforms</key>
-        <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>1f887cbafc0fe2af1e85783de0f14102</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/jemalloc-5.2.1-linux64-210451204.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>5.1.0</string>
-      </map>
-      <key>ndPhysicsStub</key>
-      <map>
-        <key>license</key>
-        <string>HACD/LGPL</string>
-        <key>license_file</key>
-        <string>LICENSES/ndPhysicsStub.txt</string>
-        <key>name</key>
-        <string>ndPhysicsStub</string>
-        <key>platforms</key>
-        <map>
-          <key>darwin</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>7d375112b162e32e37262da4a6c0a702</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-darwin-202330107.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>darwin</string>
-          </map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>c266a8d6124fc11e41a82c288f2bf8e4</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.202321033-linux64-202321033.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
-          </map>
-          <key>windows</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>adb2d66a0f5cb473a36e24c4dc3cfa36</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-windows-202121822.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>windows</string>
-          </map>
-          <key>windows64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>02f70159e14c7b7213b22a0225508c46</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-windows64-202121823.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>windows64</string>
-          </map>
-        </map>
-      </map>
-      <key>gntp-growl</key>
-      <map>
-        <key>copyright</key>
-        <string>The Growl Project</string>
-        <key>description</key>
-        <string>A unified notification system for Mac OS X</string>
-        <key>license</key>
-        <string>bsd</string>
-        <key>name</key>
-        <string>gntp-growl</string>
-        <key>platforms</key>
-        <map>
-          <key>darwin</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>33300134846d0f00ac4f31c1a190e3e6</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/gntp_growl-1.0-darwin-201505101047-r12.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>darwin</string>
-          </map>
-          <key>linux</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>af06208ec80b1f170cc560141602e2dc</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/libnotify-0.4.4-linux-20101003.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-          <key>windows</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>29a573c4d27d617345030cf28860ea2e</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/gntp_growl-1.0-windows-vs2017-1906061512.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>windows</string>
-          </map>
-          <key>windows64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>a333b335104b3d0df14b9be005ef1571</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/gntp_growl-1.0-windows64-vs2017-1906061512.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>windows64</string>
-          </map>
-        </map>
-      </map>
-      <key>discord-rpc</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright 2019 Discord, Inc.</string>
-        <key>description</key>
-        <string>C++ library to interface with Discord's API</string>
-        <key>license</key>
-        <string>MIT</string>
-        <key>license_file</key>
-        <string>LICENSES/discord-rpc.txt</string>
-        <key>name</key>
-        <string>discord-rpc</string>
-        <key>platforms</key>
-        <map>
-          <key>windows</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>c97507d081f25261ec14238ea80f5163</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-windows-192581529.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>windows</string>
-          </map>
-          <key>windows64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>f63f07d4c87fbbb698b9039583f08b76</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-windows64-192581529.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>windows64</string>
-          </map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>cefa1cdb50a85e36114ca89df66c0b5a</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-linux64-192540843.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
-          </map>
-          <key>darwin64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>3bc297a0fa47094bb52d361f80186387</string>
-              <key>url</key>
-              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-darwin64-192522358.tar.bz2</uri>
-            </map>
-            <key>name</key>
-            <string>darwin64</string>
-          </map>
-        </map>
-      </map>
       <key>SDL</key>
       <map>
         <key>copyright</key>
@@ -571,6 +243,34 @@
         <key>version</key>
         <string>1.72</string>
       </map>
+      <key>breakpad</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright (C) google</string>
+        <key>license</key>
+        <string>BSD</string>
+        <key>license_file</key>
+        <string>LICENSES/google_breakpad.txt</string>
+        <key>name</key>
+        <string>breakpad</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>482c2b25bbfd25edc058a02f82da39b2</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/breakpad-4708e6fb-linux64_bionic-220392253.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux</string>
+          </map>
+        </map>
+        <key>version</key>
+        <string>2.48.0</string>
+      </map>
       <key>bugsplat</key>
       <map>
         <key>copyright</key>
@@ -713,18 +413,6 @@
         <string>cubemaptoequirectangular</string>
         <key>platforms</key>
         <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>eb62a7040c7579569e06e5a61a7831d5</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/cubemaptoequirectangular-1.1.0-linux64-213500938.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>darwin64</string>
-          </map>
           <key>darwin64</key>
           <map>
             <key>archive</key>
@@ -733,6 +421,18 @@
               <string>7e4622b497bc465b01ff6d3e7e0b4214</string>
               <key>url</key>
               <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/89303/815402/cubemaptoequirectangular-1.1.0-darwin64-564841.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>eb62a7040c7579569e06e5a61a7831d5</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/cubemaptoequirectangular-1.1.0-linux64-213500938.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -917,6 +617,70 @@
         <key>version</key>
         <string>1.538984</string>
       </map>
+      <key>discord-rpc</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright 2019 Discord, Inc.</string>
+        <key>description</key>
+        <string>C++ library to interface with Discord's API</string>
+        <key>license</key>
+        <string>MIT</string>
+        <key>license_file</key>
+        <string>LICENSES/discord-rpc.txt</string>
+        <key>name</key>
+        <string>discord-rpc</string>
+        <key>platforms</key>
+        <map>
+          <key>darwin64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>3bc297a0fa47094bb52d361f80186387</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-darwin64-192522358.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>cefa1cdb50a85e36114ca89df66c0b5a</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-linux64-192540843.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
+          <key>windows</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>c97507d081f25261ec14238ea80f5163</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-windows-192581529.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>windows</string>
+          </map>
+          <key>windows64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>f63f07d4c87fbbb698b9039583f08b76</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/discord_rpc-3.4.0-windows64-192581529.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>windows64</string>
+          </map>
+        </map>
+      </map>
       <key>dullahan</key>
       <map>
         <key>copyright</key>
@@ -943,6 +707,18 @@
             <key>name</key>
             <string>darwin64</string>
           </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>8d532edd648448d78e6daa0cc5f821f9</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/dullahan-1.12.2.202202071031_91.1.23_g04c8d56_chromium-91.0.4472.164-linux64-220380931.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
           <key>windows</key>
           <map>
             <key>archive</key>
@@ -966,18 +742,6 @@
             </map>
             <key>name</key>
             <string>windows64</string>
-          </map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>8d532edd648448d78e6daa0cc5f821f9</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/dullahan-1.12.2.202202071031_91.1.23_g04c8d56_chromium-91.0.4472.164-linux64-220380931.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
           </map>
         </map>
         <key>version</key>
@@ -1096,6 +860,34 @@
         </map>
         <key>version</key>
         <string>2.1.1.555519</string>
+      </map>
+      <key>fltk</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright (C) fltk project</string>
+        <key>license</key>
+        <string>LGPL/fltk</string>
+        <key>license_file</key>
+        <string>LICENSES/fltk.txt</string>
+        <key>name</key>
+        <string>fltk</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>81fe1e927e4fe3c5e5f15ce6219ca883</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/fltk-1.3.5.202282121-linux64-202282121.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux</string>
+          </map>
+        </map>
+        <key>version</key>
+        <string>1.3.5</string>
       </map>
       <key>fmodstudio</key>
       <map>
@@ -1411,6 +1203,34 @@
         <key>version</key>
         <string>0.0.0</string>
       </map>
+      <key>glib</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright (C) glib project</string>
+        <key>license</key>
+        <string>LGPL</string>
+        <key>license_file</key>
+        <string>LICENSES/glib.txt</string>
+        <key>name</key>
+        <string>glib</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>9c93ba8b8af97fc8379f77de77e1540a</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/glib-2.48.0.202301938-linux64-202301938.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux</string>
+          </map>
+        </map>
+        <key>version</key>
+        <string>2.48.0</string>
+      </map>
       <key>glod</key>
       <map>
         <key>copyright</key>
@@ -1504,6 +1324,68 @@
         </map>
         <key>version</key>
         <string>1.0pre3.532346</string>
+      </map>
+      <key>gntp-growl</key>
+      <map>
+        <key>copyright</key>
+        <string>The Growl Project</string>
+        <key>description</key>
+        <string>A unified notification system for Mac OS X</string>
+        <key>license</key>
+        <string>bsd</string>
+        <key>name</key>
+        <string>gntp-growl</string>
+        <key>platforms</key>
+        <map>
+          <key>darwin</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>33300134846d0f00ac4f31c1a190e3e6</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/gntp_growl-1.0-darwin-201505101047-r12.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>darwin</string>
+          </map>
+          <key>linux</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>af06208ec80b1f170cc560141602e2dc</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/libnotify-0.4.4-linux-20101003.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>linux</string>
+          </map>
+          <key>windows</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>29a573c4d27d617345030cf28860ea2e</string>
+              <key>url</key>
+              <uri>http://3p.firestormviewer.org/gntp_growl-1.0-windows-vs2017-1906061512.tar.bz2</uri>
+            </map>
+            <key>name</key>
+            <string>windows</string>
+          </map>
+          <key>windows64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>a333b335104b3d0df14b9be005ef1571</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/gntp_growl-1.0-windows64-vs2017-1906061512.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>windows64</string>
+          </map>
+        </map>
       </map>
       <key>googlemock</key>
       <map>
@@ -1635,6 +1517,34 @@
         <key>version</key>
         <string>0.10.6.314267</string>
       </map>
+      <key>gstreamer10</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;</string>
+        <key>license</key>
+        <string>LGPL</string>
+        <key>license_file</key>
+        <string>LICENSES/gstreamer.txt</string>
+        <key>name</key>
+        <string>gstreamer10</string>
+        <key>platforms</key>
+        <map>
+          <key>linux</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>01f39ecf80dae64e30402ac384035b3e</string>
+              <key>url</key>
+              <string>http://downloads.phoenixviewer.com/gstreamer10-1.6.3.201605191852-linux-201605191852.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux</string>
+          </map>
+        </map>
+        <key>version</key>
+        <string>0.10.6.294903</string>
+      </map>
       <key>havok-source</key>
       <map>
         <key>copyright</key>
@@ -1725,6 +1635,36 @@
         <key>version</key>
         <string>2012.1-2</string>
       </map>
+      <key>jemalloc</key>
+      <map>
+        <key>copyright</key>
+        <string>Copyright (C) 2002-present Jason Evans jasone@canonware.com.</string>
+        <key>description</key>
+        <string>jemalloc is a general purpose malloc(3) implementation that emphasizes fragmentation avoidance and scalable concurrency support.</string>
+        <key>license</key>
+        <string>jemalloc (BSD derived)</string>
+        <key>license_file</key>
+        <string>LICENSES/jemalloc.txt</string>
+        <key>name</key>
+        <string>jemalloc</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>1f887cbafc0fe2af1e85783de0f14102</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/jemalloc-5.2.1-linux64-210451204.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
+        </map>
+        <key>version</key>
+        <string>5.1.0</string>
+      </map>
       <key>jpegencoderbasic</key>
       <map>
         <key>copyright</key>
@@ -1737,18 +1677,6 @@
         <string>jpegencoderbasic</string>
         <key>platforms</key>
         <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>fd8060aa3c920e0fc63e7ecbea67bc5e</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/jpegencoderbasic-1.0-linux64-213500937.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>darwin64</string>
-          </map>
           <key>darwin64</key>
           <map>
             <key>archive</key>
@@ -1757,6 +1685,18 @@
               <string>c3c9e60bdc12b35e0e3d6b67d5635f60</string>
               <key>url</key>
               <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/89304/815407/jpegencoderbasic-1.0-darwin64-564842.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>fd8060aa3c920e0fc63e7ecbea67bc5e</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/jpegencoderbasic-1.0-linux64-213500937.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -2668,6 +2608,66 @@
         <key>version</key>
         <string>7.11.1.297294</string>
       </map>
+      <key>ndPhysicsStub</key>
+      <map>
+        <key>license</key>
+        <string>HACD/LGPL</string>
+        <key>license_file</key>
+        <string>LICENSES/ndPhysicsStub.txt</string>
+        <key>name</key>
+        <string>ndPhysicsStub</string>
+        <key>platforms</key>
+        <map>
+          <key>darwin</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>7d375112b162e32e37262da4a6c0a702</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-darwin-202330107.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>darwin</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>c266a8d6124fc11e41a82c288f2bf8e4</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.202321033-linux64-202321033.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
+          <key>windows</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>adb2d66a0f5cb473a36e24c4dc3cfa36</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-windows-202121822.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>windows</string>
+          </map>
+          <key>windows64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>02f70159e14c7b7213b22a0225508c46</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/ndPhysicsStub-1.0-windows64-202121823.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>windows64</string>
+          </map>
+        </map>
+      </map>
       <key>nghttp2</key>
       <map>
         <key>copyright</key>
@@ -3333,23 +3333,53 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
         <string>tailslide</string>
         <key>platforms</key>
         <map>
+          <key>darwin64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>cd3c9ad16f3e236ac11e9c9e97c9e2bd35ba2465</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/SaladDais/tailslide/releases/download/v1.3.3/tailslide-darwin64-1.3.3.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>darwin64</string>
+          </map>
           <key>linux64</key>
           <map>
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>a70717ff7651256aebdfb10de5983fed</string>
+              <string>1909c5240218787bac1822eae5a8aa622eeeefe8</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/SaladDais/tailslide/releases/download/v1.1.0/tailslide-v1.1.0-a70717ff7651256aebdfb10de5983fed-linux64.tar.bz2</string>
+              <string>https://github.com/SaladDais/tailslide/releases/download/v1.3.3/tailslide-linux64-1.3.3.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
+          </map>
+          <key>windows64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>3092a175ee31b238209b0b9974bf45d069aff164</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/SaladDais/tailslide/releases/download/v1.3.3/tailslide-windows64-1.3.3.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>windows64</string>
           </map>
         </map>
         <key>source_type</key>
         <string>git</string>
         <key>version</key>
-        <string>1.1.1-dev0.ge758be4.d20220813</string>
+        <string>1.3.3</string>
       </map>
       <key>threejs</key>
       <map>
@@ -3363,18 +3393,6 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
         <string>threejs</string>
         <key>platforms</key>
         <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>d37be064bd851276dab423d723cb9b7d</string>
-              <key>url</key>
-              <string>http://3p.firestormviewer.org/threejs-0.132.2-linux64-213500940.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>darwin64</string>
-          </map>
           <key>darwin64</key>
           <map>
             <key>archive</key>
@@ -3383,6 +3401,18 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <string>24440e8219e59d81423b68d3be381fef</string>
               <key>url</key>
               <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/89305/815412/threejs-0.132.2-darwin64-564843.tar.bz2</string>
+            </map>
+            <key>name</key>
+            <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>d37be064bd851276dab423d723cb9b7d</string>
+              <key>url</key>
+              <string>http://3p.firestormviewer.org/threejs-0.132.2-linux64-213500940.tar.bz2</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -3860,6 +3890,25 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
         <map>
           <key>configurations</key>
           <map>
+            <key>Doxygen</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>arguments</key>
+                <array>
+                  <string>doxygen/Doxyfile</string>
+                </array>
+                <key>command</key>
+                <string>doxygen</string>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>command</key>
+                <string>cmake</string>
+              </map>
+              <key>name</key>
+              <string>Doxygen</string>
+            </map>
             <key>RelWithDebInfo</key>
             <map>
               <key>configure</key>
@@ -3880,6 +3929,68 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>name</key>
               <string>RelWithDebInfo</string>
+            </map>
+            <key>RelWithDebInfoFS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>command</key>
+                <string>bash</string>
+                <key>options</key>
+                <array>
+                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--build</string>
+                  <string>--version</string>
+                  <string>--opensim</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>command</key>
+                <string>bash</string>
+                <key>options</key>
+                <array>
+                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--config</string>
+                  <string>--version</string>
+                  <string>--opensim</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>RelWithDebInfoFS</string>
+            </map>
+            <key>RelWithDebInfoFS_open</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>command</key>
+                <string>bash</string>
+                <key>options</key>
+                <array>
+                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--build</string>
+                  <string>--version</string>
+                  <string>--opensim</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>command</key>
+                <string>bash</string>
+                <key>options</key>
+                <array>
+                  <string>../scripts/configure_firestorm.sh</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--config</string>
+                  <string>--version</string>
+                  <string>--opensim</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>RelWithDebInfoFS_open</string>
             </map>
             <key>RelWithDebInfoOS</key>
             <map>
@@ -3922,46 +4033,6 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>name</key>
               <string>Release</string>
-            </map>
-            <key>ReleaseOS</key>
-            <map>
-              <key>configure</key>
-              <map>
-                <key>arguments</key>
-                <array>
-                  <string>../indra</string>
-                </array>
-                <key>command</key>
-                <string>cmake</string>
-                <key>options</key>
-                <array>
-                  <string>-DCMAKE_BUILD_TYPE:STRING=Release</string>
-                  <string>-DADDRESS_SIZE:STRING=$AUTOBUILD_ADDRSIZE</string>
-                  <string>-DROOT_PROJECT_NAME:STRING=SecondLife</string>
-                  <string>-DINSTALL_PROPRIETARY=FALSE</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>ReleaseOS</string>
-            </map>
-            <key>Doxygen</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>arguments</key>
-                <array>
-                  <string>doxygen/Doxyfile</string>
-                </array>
-                <key>command</key>
-                <string>doxygen</string>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>command</key>
-                <string>cmake</string>
-              </map>
-              <key>name</key>
-              <string>Doxygen</string>
             </map>
             <key>ReleaseFS</key>
             <map>
@@ -4083,67 +4154,26 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>ReleaseFS_open</string>
             </map>
-            <key>RelWithDebInfoFS</key>
+            <key>ReleaseOS</key>
             <map>
-              <key>build</key>
-              <map>
-                <key>command</key>
-                <string>bash</string>
-                <key>options</key>
-                <array>
-                  <string>../scripts/configure_firestorm.sh</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--build</string>
-                  <string>--version</string>
-                  <string>--opensim</string>
-                </array>
-              </map>
               <key>configure</key>
               <map>
+                <key>arguments</key>
+                <array>
+                  <string>../indra</string>
+                </array>
                 <key>command</key>
-                <string>bash</string>
+                <string>cmake</string>
                 <key>options</key>
                 <array>
-                  <string>../scripts/configure_firestorm.sh</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--config</string>
-                  <string>--version</string>
-                  <string>--opensim</string>
+                  <string>-DCMAKE_BUILD_TYPE:STRING=Release</string>
+                  <string>-DADDRESS_SIZE:STRING=$AUTOBUILD_ADDRSIZE</string>
+                  <string>-DROOT_PROJECT_NAME:STRING=SecondLife</string>
+                  <string>-DINSTALL_PROPRIETARY=FALSE</string>
                 </array>
               </map>
               <key>name</key>
-              <string>RelWithDebInfoFS</string>
-            </map>
-            <key>RelWithDebInfoFS_open</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>command</key>
-                <string>bash</string>
-                <key>options</key>
-                <array>
-                  <string>../scripts/configure_firestorm.sh</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--build</string>
-                  <string>--version</string>
-                  <string>--opensim</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>command</key>
-                <string>bash</string>
-                <key>options</key>
-                <array>
-                  <string>../scripts/configure_firestorm.sh</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--config</string>
-                  <string>--version</string>
-                  <string>--opensim</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>RelWithDebInfoFS_open</string>
+              <string>ReleaseOS</string>
             </map>
           </map>
           <key>name</key>
@@ -4162,16 +4192,16 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>configure</key>
               <map>
+                <key>arguments</key>
+                <array>
+                  <string>../indra</string>
+                </array>
                 <key>options</key>
                 <array>
                   <string>-DCMAKE_BUILD_TYPE:STRING=Release</string>
                   <string>-DWORD_SIZE:STRING=32</string>
                   <string>-DROOT_PROJECT_NAME:STRING=SecondLife</string>
                   <string>-DINSTALL_PROPRIETARY=TRUE</string>
-                </array>
-                <key>arguments</key>
-                <array>
-                  <string>../indra</string>
                 </array>
               </map>
               <key>name</key>
@@ -4201,6 +4231,54 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>name</key>
               <string>RelWithDebInfo</string>
+            </map>
+            <key>RelWithDebInfoFS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--package</string>
+                  <string>--platform darwin</string>
+                  <string>--fmodstudio</string>
+                  <string>--kdu</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                  <string>--package</string>
+                  <string>--fmodstudio</string>
+                  <string>--kdu</string>
+                </array>
+              </map>
+              <key>default</key>
+              <string>True</string>
+              <key>name</key>
+              <string>RelWithDebInfoFS</string>
+            </map>
+            <key>RelWithDebInfoFS_open</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--package</string>
+                  <string>--platform darwin</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                  <string>--package</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>RelWithDebInfoFS_open</string>
             </map>
             <key>RelWithDebInfoOS</key>
             <map>
@@ -4252,6 +4330,48 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>Release</string>
             </map>
+            <key>ReleaseFS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                  <string>--fmodstudio</string>
+                  <string>--kdu</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                  <string>--kdu</string>
+                  <string>--fmodstudio</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>ReleaseFS</string>
+            </map>
+            <key>ReleaseFS_open</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--platform darwin</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>ReleaseFS_open</string>
+            </map>
             <key>ReleaseOS</key>
             <map>
               <key>build</key>
@@ -4277,97 +4397,7 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>ReleaseOS</string>
             </map>
-            <key>RelWithDebInfoFS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--package</string>
-                  <string>--platform darwin</string>
-                  <string>--fmodstudio</string>
-                  <string>--kdu</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                  <string>--package</string>
-                  <string>--fmodstudio</string>
-                  <string>--kdu</string>
-                </array>
-              </map>
-              <key>default</key>
-              <string>True</string>
-              <key>name</key>
-              <string>RelWithDebInfoFS</string>
-            </map>
-            <key>RelWithDebInfoFS_open</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--package</string>
-                  <string>--platform darwin</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                  <string>--package</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>RelWithDebInfoFS_open</string>
-            </map>
-            <key>ReleaseFS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                  <string>--fmodstudio</string>
-                  <string>--kdu</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                  <string>--kdu</string>
-                  <string>--fmodstudio</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>ReleaseFS</string>
-            </map>
-             <key>ReleaseFS_open</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--platform darwin</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>ReleaseFS_open</string>
-            </map>
-         </map>
+          </map>
           <key>name</key>
           <string>darwin64</string>
         </map>
@@ -4426,83 +4456,6 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>RelWithDebInfo</string>
             </map>
-            <key>RelWithDebInfoOS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>command</key>
-                <string>make</string>
-                <key>options</key>
-                <array>
-                  <string>-j</string>
-                  <string>7</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>-G</string>
-                  <string>Unix Makefiles</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>RelWithDebInfoOS</string>
-            </map>
-            <key>Release</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>command</key>
-                <string>make</string>
-                <key>options</key>
-                <array>
-                  <string>-j</string>
-                  <string>12</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>-G</string>
-                  <string>Unix Makefiles</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>Release</string>
-            </map>
-            <key>ReleaseOS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>command</key>
-                <string>make</string>
-                <key>options</key>
-                <array>
-                  <string>-j</string>
-                  <string>7</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>-G</string>
-                  <string>Unix Makefiles</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>ReleaseOS</string>
-            </map>
-            <key>default</key>
-            <map>
-              <key>build</key>
-              <map>
-              </map>
-              <key>name</key>
-              <string>default</string>
-            </map>
             <key>RelWithDebInfoFS</key>
             <map>
               <key>build</key>
@@ -4549,6 +4502,52 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>RelWithDebInfoFS_open</string>
             </map>
+            <key>RelWithDebInfoOS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>command</key>
+                <string>make</string>
+                <key>options</key>
+                <array>
+                  <string>-j</string>
+                  <string>7</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>-G</string>
+                  <string>Unix Makefiles</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>RelWithDebInfoOS</string>
+            </map>
+            <key>Release</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>command</key>
+                <string>make</string>
+                <key>options</key>
+                <array>
+                  <string>-j</string>
+                  <string>12</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>-G</string>
+                  <string>Unix Makefiles</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>Release</string>
+            </map>
             <key>ReleaseFS</key>
             <map>
               <key>build</key>
@@ -4593,6 +4592,37 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>ReleaseFS_open</string>
             </map>
+            <key>ReleaseOS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>command</key>
+                <string>make</string>
+                <key>options</key>
+                <array>
+                  <string>-j</string>
+                  <string>7</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>-G</string>
+                  <string>Unix Makefiles</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>ReleaseOS</string>
+            </map>
+            <key>default</key>
+            <map>
+              <key>build</key>
+              <map>
+              </map>
+              <key>name</key>
+              <string>default</string>
+            </map>
           </map>
           <key>name</key>
           <string>linux</string>
@@ -4633,6 +4663,56 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>name</key>
               <string>RelWithDebInfo</string>
+            </map>
+            <key>RelWithDebInfoFS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--fmodstudio</string>
+                  <string>--kdu</string>
+                  <string>--version</string>
+                  <string>--platform windows</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--fmodstudio</string>
+                  <string>--kdu</string>
+                  <string>--version</string>
+                  <string>--platform windows</string>
+                </array>
+              </map>
+              <key>default</key>
+              <string>True</string>
+              <key>name</key>
+              <string>RelWithDebInfoFS</string>
+            </map>
+            <key>RelWithDebInfoFS_open</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--version</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--platform windows</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>options</key>
+                <array>
+                  <string>--version</string>
+                  <string>--btype RelWithDebInfo</string>
+                  <string>--platform windows</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>RelWithDebInfoFS_open</string>
             </map>
             <key>RelWithDebInfoOS</key>
             <map>
@@ -4704,96 +4784,6 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               <key>name</key>
               <string>Release</string>
             </map>
-            <key>ReleaseOS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>arguments</key>
-                <array>
-                  <string>SecondLife.sln</string>
-                </array>
-                <key>command</key>
-                <string>devenv</string>
-                <key>options</key>
-                <array>
-                  <string>/p:Configuration=Release</string>
-                  <string>/p:Platform=${AUTOBUILD_WIN_VSPLATFORM|NOTWIN}</string>
-                  <string>/t:Build</string>
-                  <string>/p:useenv=true</string>
-                  <string>/verbosity:minimal</string>
-                  <string>/toolsversion:4.0</string>
-                  <string>/p:VCBuildAdditionalOptions= /incremental</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>arguments</key>
-                <array>
-                  <string>..\indra</string>
-                </array>
-                <key>options</key>
-                <array>
-                  <string>-G</string>
-                  <string>${AUTOBUILD_WIN_CMAKE_GEN|NOTWIN}</string>
-                  <string>-DUNATTENDED:BOOL=ON</string>
-                  <string>-DINSTALL_PROPRIETARY=FALSE</string>
-                  <string>-DUSE_KDU=FALSE</string>
-                  <string>-DOPENAL:BOOL=ON</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>ReleaseOS</string>
-            </map>
-            <key>RelWithDebInfoFS</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--fmodstudio</string>
-                  <string>--kdu</string>
-                  <string>--version</string>
-                  <string>--platform windows</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--fmodstudio</string>
-                  <string>--kdu</string>
-                  <string>--version</string>
-                  <string>--platform windows</string>
-                </array>
-              </map>
-              <key>default</key>
-              <string>True</string>
-              <key>name</key>
-              <string>RelWithDebInfoFS</string>
-            </map>
-            <key>RelWithDebInfoFS_open</key>
-            <map>
-              <key>build</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--version</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--platform windows</string>
-                </array>
-              </map>
-              <key>configure</key>
-              <map>
-                <key>options</key>
-                <array>
-                  <string>--version</string>
-                  <string>--btype RelWithDebInfo</string>
-                  <string>--platform windows</string>
-                </array>
-              </map>
-              <key>name</key>
-              <string>RelWithDebInfoFS_open</string>
-            </map>
             <key>ReleaseFS</key>
             <map>
               <key>build</key>
@@ -4889,6 +4879,46 @@ Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors</string>
               </map>
               <key>name</key>
               <string>ReleaseFS_open</string>
+            </map>
+            <key>ReleaseOS</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>arguments</key>
+                <array>
+                  <string>SecondLife.sln</string>
+                </array>
+                <key>command</key>
+                <string>devenv</string>
+                <key>options</key>
+                <array>
+                  <string>/p:Configuration=Release</string>
+                  <string>/p:Platform=${AUTOBUILD_WIN_VSPLATFORM|NOTWIN}</string>
+                  <string>/t:Build</string>
+                  <string>/p:useenv=true</string>
+                  <string>/verbosity:minimal</string>
+                  <string>/toolsversion:4.0</string>
+                  <string>/p:VCBuildAdditionalOptions= /incremental</string>
+                </array>
+              </map>
+              <key>configure</key>
+              <map>
+                <key>arguments</key>
+                <array>
+                  <string>..\indra</string>
+                </array>
+                <key>options</key>
+                <array>
+                  <string>-G</string>
+                  <string>${AUTOBUILD_WIN_CMAKE_GEN|NOTWIN}</string>
+                  <string>-DUNATTENDED:BOOL=ON</string>
+                  <string>-DINSTALL_PROPRIETARY=FALSE</string>
+                  <string>-DUSE_KDU=FALSE</string>
+                  <string>-DOPENAL:BOOL=ON</string>
+                </array>
+              </map>
+              <key>name</key>
+              <string>ReleaseOS</string>
             </map>
           </map>
           <key>name</key>

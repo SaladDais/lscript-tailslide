@@ -7,16 +7,9 @@ compiler. Supports both CIL and LSO compilation.
 
 ## Building
 
-Builds on Linux using [Linden autobuild](https://bitbucket.org/lindenlab/autobuild/src) with
+Builds using [Linden autobuild](https://bitbucket.org/lindenlab/autobuild/src) with
 [Firestorm's autobuild variables](https://vcs.firestormviewer.org/fs-build-variables). Clang must be used for the
-libFuzzer integration, but GCC works for everything else. Also compiles on x86-64 OS X with a little fiddling.
-
-An autobuild package for tailslide exists and is used, but isn't provided for platforms other than linux64.
-For now you'll also need to `sudo make install` tailslide itself on other platforms.
-
-```bash
-$ CXX=clang++ autobuild build -A64 -c RelWithDebInfoFS_open
-```
+libFuzzer integration, but GCC or MSVC works for everything else.
 
 ## Using
 

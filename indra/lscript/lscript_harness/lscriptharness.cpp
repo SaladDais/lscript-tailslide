@@ -119,7 +119,7 @@ int main(int argc, char **argv) {
     if (use_tailslide)
     {
         Tailslide::ScopedScriptParser parser(nullptr);
-        auto script = parser.parseLSL(argv[1]);
+        auto script = parser.parseLSLFile(argv[1]);
         if (!script)
             return 1;
 
@@ -133,7 +133,7 @@ int main(int argc, char **argv) {
         parser.logger.finalize();
         if (parser.logger.getErrors())
         {
-            parser.logger.report();
+            parser.logger.printReport();
             return 1;
         }
         if (compile_cil)
